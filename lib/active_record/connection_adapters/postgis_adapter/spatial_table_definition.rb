@@ -82,6 +82,10 @@ module ActiveRecord  # :nodoc:
           column(name, :st_polygon, options)
         end
 
+        def st_geohash(name, options = {})
+          column(name, :st_geohash, options)
+        end
+
         private
 
         def create_column_definition(name, type)

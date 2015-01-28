@@ -118,6 +118,7 @@ module ActiveRecord
             spatial:             "geometry",
             st_point:            "st_point",
             st_polygon:          "st_polygon",
+            st_geohash:          "st_geohash"
           )
         end
 
@@ -145,6 +146,7 @@ module ActiveRecord
             multi_polygon
             st_point
             st_polygon
+            st_geohash
             )
             .each do |geo_type|
               map.register_type(geo_type) do |_, _, sql_type|

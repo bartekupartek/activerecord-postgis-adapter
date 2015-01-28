@@ -14,6 +14,7 @@ module ActiveRecord  # :nodoc:
             spatial:             {},
             st_point:            {},
             st_polygon:          {},
+            st_geohash:          {}
           }
 
         # http://postgis.17.x6.nabble.com/Default-SRID-td5001115.html
